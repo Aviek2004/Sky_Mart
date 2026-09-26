@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 
-const Hero = () => {
+const Hero = ({ userName }) => {
   const navigate = useNavigate();
   return (
     <div className="bg-[#111]
@@ -18,7 +18,7 @@ const Hero = () => {
   <div className="flex flex-col gap-5">
     <div>
       <h1 className="uppercase text-[#c8f400] text-xl mb-5">
-        Good afternoon 👋
+        Let's start Shopping  👋
       </h1>
 
       <h1 className="text-white text-6xl">
@@ -27,7 +27,7 @@ const Hero = () => {
     </div>
 
     <p className="text-[#c8f400] text-5xl">
-      Aviek!
+      {userName}!
     </p>
 
     <div>
